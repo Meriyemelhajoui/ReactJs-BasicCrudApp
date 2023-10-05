@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Simple CRUD Application with React.js and JSON Server
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple CRUD (Create, Read, Update, Delete) application built using React.js for the front end and JSON Server for the back end. The goal of this project is to demonstrate the use of various React hooks, including `useState`, `useEffect`, and custom hooks. Additionally, a context has been created to manage the state of the application at the root level (in `App.js`), allowing for the sharing of custom hooks and state management across components.
+
+## Features
+
+- **Create**: Add new products to the database.
+- **Read**: View a list of products, search for products, and navigate through paginated results.
+- **Update**: Edit product details.
+- **Delete**: Remove products from the database.
+
+## Project Structure
+
+- **FrontEnd**: The front end is built with React.js and utilizes Bootstrap for styling.
+- **BackEnd**: The back end uses JSON Server to provide a simple RESTful API for managing products.
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can use the following scripts:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This script runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) in your web browser to view the application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `json-server -w data/db.json -p 9000`
 
-### `npm test`
+Use this command to launch the JSON Server for the back end. It provides endpoints for managing products.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Custom Hooks and Context
 
-### `npm run build`
+The project demonstrates the use of custom hooks, such as `useAppState`, for managing the global state of the application. The global state is accessible through a context, allowing multiple components to share and modify this state as needed.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to Use
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone this repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Run `npm install` to install the necessary dependencies.
+4. Start the JSON Server with `json-server -w data/db.json -p 9000`.
+5. Start the React application with `npm start`.
+6. Open your web browser and go to [http://localhost:3000](http://localhost:3000) to use the CRUD application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to modify and extend this project to suit your needs. Enjoy building with React!

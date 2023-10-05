@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Computer",
+      "price": 13300,
+      "checked": true
+    },
+    {
+      "id": 2,
+      "name": "Phone",
+      "price": 1100,
+      "checked": true
+    },
+    {
+      "id": 3,
+      "name": "Laptop",
+      "price": "5999",
+      "checked": false
+    },
+    {
+      "id": 7,
+      "name": "MacBook",
+      "price": "10000",
+      "checked": true
+    },
+    {
+      "name": "Infinix P30",
+      "price": "2200",
+      "checked": false,
+      "id": 9
+    },
+    {
+      "name": "Huawei 12s",
+      "price": "2300",
+      "checked": true,
+      "id": 10
+    }
+  ]
+}
